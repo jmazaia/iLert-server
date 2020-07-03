@@ -10,6 +10,7 @@ const routes = new Router();
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 routes.get('/list', MarkController.list);
+routes.get('/listId/:id', MarkController.listId);
 routes.post('/createAlert', MarkController.store);
 routes.use(authMiddleware);
 routes.put('/users', UserController.update);
